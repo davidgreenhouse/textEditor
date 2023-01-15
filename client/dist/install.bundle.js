@@ -15,18 +15,18 @@
   \***************************/
 /***/ (() => {
 
-    eval("const butInstall = document.getElementById(\"buttonInstall\");\n\n// Logic for installing the PWA\n// TODO: Add an event handler to the `beforeinstallprompt` event\nwindow.addEventListener(\"beforeinstallprompt\", (event) => {\n  window.deferredPrompt = event;\n\n  butInstall.classList.toggle(\"hidden\", false);\n});\n\n// TODO: Implement a click event handler on the `butInstall` element\nbutInstall.addEventListener(\"click\", async () => {\n  const promptEvent = window.deferredPrompt;\n\n  if (!promptEvent) {\n    return;\n  }\n\n  promptEvent.prompt();\n\n  window.deferredPrompt = null;\n\n  butInstall.classList.toggle(\"hidden\", true);\n});\n\n// TODO: Add an handler for the `appinstalled` event\nwindow.addEventListener(\"appinstalled\", (event) => {\n  window.deferredPrompt = null;\n});\n\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
+eval("const butInstall = document.getElementById(\"buttonInstall\");\r\n\r\n// Logic for installing the PWA\r\n// TODO: Add an event handler to the `beforeinstallprompt` event\r\nwindow.addEventListener(\"beforeinstallprompt\", (event) => {\r\n  window.deferredPrompt = event;\r\n\r\n  butInstall.classList.toggle(\"hidden\", false);\r\n});\r\n\r\n// TODO: Implement a click event handler on the `butInstall` element\r\nbutInstall.addEventListener(\"click\", async () => {\r\n  const promptEvent = window.deferredPrompt;\r\n\r\n  if (!promptEvent) {\r\n    return;\r\n  }\r\n\r\n  promptEvent.prompt();\r\n\r\n  window.deferredPrompt = null;\r\n\r\n  butInstall.classList.toggle(\"hidden\", true);\r\n});\r\n\r\n// TODO: Add an handler for the `appinstalled` event\r\nwindow.addEventListener(\"appinstalled\", (event) => {\r\n  window.deferredPrompt = null;\r\n});\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
 
-    /***/ })
-    
-    /******/ 	});
-    /************************************************************************/
-    /******/ 	
-    /******/ 	// startup
-    /******/ 	// Load entry module and return exports
-    /******/ 	// This entry module can't be inlined because the eval devtool is used.
-    /******/ 	var __webpack_exports__ = {};
-    /******/ 	__webpack_modules__["./src/js/install.js"]();
-    /******/ 	
-    /******/ })()
-    ;
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/js/install.js"]();
+/******/ 	
+/******/ })()
+;
